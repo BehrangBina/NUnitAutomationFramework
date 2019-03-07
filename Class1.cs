@@ -22,13 +22,14 @@ namespace NUnitAutomationFramework
             var config = AllureLifecycle.Instance.JsonConfiguration;
 
         }
+
         [Test]
         public void TestAdd()
         {
-            Assert.True(4+4>0,"4+4>0");
-            Assert.AreEqual(2+2,4,"4");
+            Assert.True(4 + 4 > 0, "4+4>0");
+            Assert.AreEqual(2 + 2, 4, "4");
         }
-         
+
         [Test(Description = "XXX")]
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
@@ -40,15 +41,20 @@ namespace NUnitAutomationFramework
         public void TestSubtract()
         {
             Assert.True(4 - 4 == 0, "4-4==0");
-            Assert.AreEqual(2 -2, 0, "0");
+            Assert.AreEqual(2 - 2, 0, "0");
         }
-        [Test]
-        [AllureTag("NUnit", "Debug")]
-        [AllureIssue("GitHub#1", "https://github.com/unickq/allure-nunit")]
-        [AllureFeature("Core")]
-        public void EvenTest([Range(0, 5)] int value)
+        [Test(Description = "XXX")]
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureIssue("ISSUE-1")]
+        [AllureTms("TMS-12")]
+        [AllureOwner("User")]
+        [AllureSuite("PassedSuite")]
+        [AllureSubSuite("NoAssert")]
+        public void TestDevide()
         {
-            Assert.IsTrue(value % 2 == 0, $"Oh no :( {value} % 2 = {value % 2}");
+            Assert.True((4 / 4) == 1, "4/4==1");
+            Assert.AreEqual(2 / 2, 1, "2/2==1");
         }
     }
 }
