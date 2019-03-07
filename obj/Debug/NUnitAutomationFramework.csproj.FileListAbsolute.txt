@@ -16,6 +16,8 @@ D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUn
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.pdb
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\allureConfig.Template.json
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\allureConfig.json
+D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\log4net.dll
+D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\log4net.xml
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Microsoft.Win32.Primitives.dll
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\netstandard.dll
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\System.AppContext.dll
@@ -112,7 +114,6 @@ D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Sys
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\System.Xml.XmlSerializer.dll
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\System.Xml.XPath.dll
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\System.Xml.XPath.XDocument.dll
-D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\log4net.dll
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Microsoft.Extensions.Configuration.dll
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
@@ -124,7 +125,6 @@ D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Mic
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\System.Buffers.dll
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\System.Memory.dll
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\System.Numerics.Vectors.dll
-D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\log4net.xml
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Microsoft.Extensions.Configuration.xml
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
@@ -136,6 +136,5 @@ D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Mic
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\System.Buffers.xml
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\System.Memory.xml
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\System.Numerics.Vectors.xml
-D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.csprojAssemblyReference.cache
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.csproj.CoreCompileInputs.cache
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.csproj.CopyComplete
