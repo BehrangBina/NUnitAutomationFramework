@@ -5,4 +5,6 @@ D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\nun
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\nunit.framework.xml
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.dll
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.pdb
-D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.csprojResolveAssemblyReference.cache
+D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.csprojAssemblyReference.cache
+D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.csproj.CoreCompileInputs.cache
+D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.csproj.CopyComplete
