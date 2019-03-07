@@ -1,0 +1,10 @@
+D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\NUnitAutomationFramework.dll
+D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\NUnitAutomationFramework.pdb
+D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\nunit.framework.dll
+D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\nunit.framework.pdb
+D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\nunit.framework.xml
+D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.csprojAssemblyReference.cache
+D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.csproj.CoreCompileInputs.cache
+D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.csproj.CopyComplete
+D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.dll
+D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.pdb
