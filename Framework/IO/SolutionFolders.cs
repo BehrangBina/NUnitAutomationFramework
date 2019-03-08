@@ -2,6 +2,8 @@
 {
     public enum SolutionFolders
     {
-        Reports, Resources , Logs
+        Reports,
+        Resources,
+        Logs
     }
 }

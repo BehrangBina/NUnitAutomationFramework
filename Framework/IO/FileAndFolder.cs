@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using log4net;
 
 namespace NUnitAutomationFramework.Framework.IO
@@ -8,7 +9,7 @@ namespace NUnitAutomationFramework.Framework.IO
         private static readonly ILog Log = LogManager.GetLogger(typeof(FileAndFolder));
 
         /// <summary>
-        /// Copy file from source to destination and returns the destination file location
+        ///     Copy file from source to destination and returns the destination file location
         /// </summary>
         /// <param name="fileName">File Name</param>
         /// <param name="source">Source Directory</param>
@@ -18,9 +19,9 @@ namespace NUnitAutomationFramework.Framework.IO
         public string CopyFile(string fileName, string source, string destination, string destFileName)
         {
             // Use Path class to manipulate file and directory paths.
-            string sourceFile = Path.Combine(source, fileName);
+            var sourceFile = Path.Combine(source, fileName);
             Log.Info($"Source File: {sourceFile}");
-            string destFile = Path.Combine(destination, destFileName);
+            var destFile = Path.Combine(destination, destFileName);
             Log.Info($"Destination File: {destFile}");
             if (!File.Exists(sourceFile))
             {
@@ -33,13 +34,14 @@ namespace NUnitAutomationFramework.Framework.IO
             Log.Info("File copied from source to destination");
             return destFile;
         }
-        public static string GetSolutionDirectory()
+
+        public static string GetExecutionDirectory()
         {
-            var baseDirectory = System.AppDomain.CurrentDomain.BaseDirectory;
-            Log.Info("Base Director: "+ baseDirectory);
-            var solutionFullPath = Path.GetFullPath(Path.Combine(baseDirectory, "..\\..\\"));
-            Log.Info("Solution Full Path: " + solutionFullPath);
-            return solutionFullPath;
+            var baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            Log.Info("Base Director: " + baseDirectory);
+           /* var solutionFullPath = Path.GetFullPath(Path.Combine(baseDirectory, "..\\..\\"));
+            Log.Info("Solution Full Path: " + solutionFullPath);*/
+            return baseDirectory;
         }
     }
 }

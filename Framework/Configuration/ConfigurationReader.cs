@@ -4,34 +4,35 @@ using NUnitAutomationFramework.Framework.IO;
 
 namespace NUnitAutomationFramework.Framework.Configuration
 {
-    class ConfigurationReader
+    internal class ConfigurationReader
     {
-        private readonly string _solutionDir;
         private static readonly ILog Log = LogManager.GetLogger(typeof(ConfigurationReader));
+        private readonly string _solutionDir;
 
         public ConfigurationReader()
         {
-            _solutionDir = FileAndFolder.GetSolutionDirectory();
-            Log.Info(this.GetType() + " Dir= " + _solutionDir);
+            _solutionDir = FileAndFolder.GetExecutionDirectory();
+            Log.Info(GetType() + " Dir= " + _solutionDir);
         }
+
         public string ReadFolderPathFromConfigurationFile(SolutionFolders solutionFolder)
         {
-            string folderPath = string.Empty;
+            var folderPath = string.Empty;
             switch (solutionFolder)
             {
-                case (SolutionFolders.Logs):
+                case SolutionFolders.Logs:
                     folderPath = Path.Combine(_solutionDir,
                         SolutionFolders.Reports.ToString(),
                         solutionFolder.ToString());
                     Log.Info($"Log folder full path selected: {folderPath}");
                     break;
-                case (SolutionFolders.Reports):
+                case SolutionFolders.Reports:
                     folderPath = Path.Combine(_solutionDir,
                         SolutionFolders.Reports.ToString(),
                         solutionFolder.ToString());
                     Log.Info($"Reports folder full path selected: {folderPath}");
                     break;
-                case (SolutionFolders.Resources):
+                case SolutionFolders.Resources:
                     folderPath = Path.Combine(_solutionDir,
                         SolutionFolders.Resources.ToString(),
                         solutionFolder.ToString());
@@ -41,10 +42,9 @@ namespace NUnitAutomationFramework.Framework.Configuration
             if (!Directory.Exists(folderPath))
             {
                 Directory.CreateDirectory(folderPath);
-                Log.Info("Directory Has Been Created "+ folderPath);
+                Log.Info("Directory Has Been Created " + folderPath);
             }
             return folderPath;
         }
     }
-
 }
