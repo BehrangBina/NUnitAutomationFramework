@@ -62,7 +62,7 @@ namespace NUnitAutomationFramework.DevTests
         {
             var uat = FileAndFolder.GetExecutionDirectory();
             Console.WriteLine("Solution Dir: " + uat);
-            Assert.IsTrue(Directory.Exists(uat));
+            Assert.IsTrue(Directory.Exists(uat), $"{uat} exists");
             Assert.IsTrue(uat.Contains("NUnitAutomationFramework"),$"NUnitAutomationFramework exists in {uat}");
         }
   
