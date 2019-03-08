@@ -293,3 +293,127 @@
 2019-03-08 18:43:51,239 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Source File: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\Reports\TestResult.xml
 2019-03-08 18:43:51,239 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Destination File: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Reports\Reports\TestResult.xml
 2019-03-08 18:43:51,241 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - File copied from source to destination
+2019-03-08 18:51:37,802 [NonParallelWorker] INFO NUnitAutomationFramework.TestsSetupClass - ALLURE_CONFIG_ENV_VARIABLE Environment Variable Set to: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-08 18:51:38,157 [NonParallelWorker] INFO NUnitAutomationFramework.TestsSetupClass - {
+  "allure": {
+    "directory": "allure-results",
+    "links": [
+      "{link}",
+      "https://testrail.com/browse/{tms}",
+      "https://jira.com/browse/{issue}"
+    ]
+  },
+  "specflow": {
+    "stepArguments": {
+      "convertToParameters": "true",
+      "paramNameRegex": "",
+      "paramValueRegex": ""
+    },
+    "grouping": {
+      "suites": {
+        "parentSuite": "^parentSuite:?(.+)",
+        "suite": "^suite:?(.+)",
+        "subSuite": "^subSuite:?(.+)"
+      },
+      "behaviors": {
+        "epic": "^epic:?(.+)",
+        "story": "^story:(.+)"
+      }
+    },
+    "labels": {
+      "owner": "^author:?(.+)",
+      "severity": "^(normal|blocker|critical|minor|trivial)"
+    },
+    "links": {
+      "tms": "^story:(.+)",
+      "issue": "^issue:(.+)",
+      "link": "^link:(.+)"
+    }
+  }
+}
+2019-03-08 18:51:38,176 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Base Director: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-08 18:51:47,079 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Base Director: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-08 18:51:48,181 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Base Director: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-08 18:51:48,181 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.Configuration.ConfigurationReader - NUnitAutomationFramework.Framework.Configuration.ConfigurationReader Dir= D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-08 18:51:48,344 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.Configuration.ConfigurationReader - Reports folder full path selected: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Reports\Reports
+2019-03-08 18:51:48,517 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Source File: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\Reports\TestResult.xml
+2019-03-08 18:51:48,517 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Destination File: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Reports\Reports\TestResult.xml
+2019-03-08 18:51:48,519 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - File copied from source to destination
+2019-03-08 18:52:22,892 [NonParallelWorker] INFO NUnitAutomationFramework.TestsSetupClass - ALLURE_CONFIG_ENV_VARIABLE Environment Variable Set to: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-08 18:52:23,255 [NonParallelWorker] INFO NUnitAutomationFramework.TestsSetupClass - {
+  "allure": {
+    "directory": "allure-results",
+    "links": [
+      "{link}",
+      "https://testrail.com/browse/{tms}",
+      "https://jira.com/browse/{issue}"
+    ]
+  },
+  "specflow": {
+    "stepArguments": {
+      "convertToParameters": "true",
+      "paramNameRegex": "",
+      "paramValueRegex": ""
+    },
+    "grouping": {
+      "suites": {
+        "parentSuite": "^parentSuite:?(.+)",
+        "suite": "^suite:?(.+)",
+        "subSuite": "^subSuite:?(.+)"
+      },
+      "behaviors": {
+        "epic": "^epic:?(.+)",
+        "story": "^story:(.+)"
+      }
+    },
+    "labels": {
+      "owner": "^author:?(.+)",
+      "severity": "^(normal|blocker|critical|minor|trivial)"
+    },
+    "links": {
+      "tms": "^story:(.+)",
+      "issue": "^issue:(.+)",
+      "link": "^link:(.+)"
+    }
+  }
+}
+2019-03-08 18:52:26,304 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Base Director: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-08 18:53:11,918 [NonParallelWorker] INFO NUnitAutomationFramework.TestsSetupClass - ALLURE_CONFIG_ENV_VARIABLE Environment Variable Set to: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-08 18:53:12,257 [NonParallelWorker] INFO NUnitAutomationFramework.TestsSetupClass - {
+  "allure": {
+    "directory": "allure-results",
+    "links": [
+      "{link}",
+      "https://testrail.com/browse/{tms}",
+      "https://jira.com/browse/{issue}"
+    ]
+  },
+  "specflow": {
+    "stepArguments": {
+      "convertToParameters": "true",
+      "paramNameRegex": "",
+      "paramValueRegex": ""
+    },
+    "grouping": {
+      "suites": {
+        "parentSuite": "^parentSuite:?(.+)",
+        "suite": "^suite:?(.+)",
+        "subSuite": "^subSuite:?(.+)"
+      },
+      "behaviors": {
+        "epic": "^epic:?(.+)",
+        "story": "^story:(.+)"
+      }
+    },
+    "labels": {
+      "owner": "^author:?(.+)",
+      "severity": "^(normal|blocker|critical|minor|trivial)"
+    },
+    "links": {
+      "tms": "^story:(.+)",
+      "issue": "^issue:(.+)",
+      "link": "^link:(.+)"
+    }
+  }
+}
+2019-03-08 18:53:14,311 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Base Director: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug

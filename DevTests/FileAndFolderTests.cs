@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Reflection;
 using System.Text;
 using Allure.Commons;
 using NUnit.Allure.Attributes;
@@ -50,21 +51,6 @@ namespace NUnitAutomationFramework.DevTests
             Assert.IsFalse(File.Exists(newPath));
         }
 
-        [Test(Description = "Testing Execution Folder Exist")]
-        [AllureTag("Framework Implementation")]
-        [AllureSeverity(SeverityLevel.critical)]
-        [AllureIssue("ISSUE-Reading_From_Folders")]
-        [AllureTms("TMS-Reading_From_Folders")]
-        [AllureOwner("Behrang Bina")]
-        [AllureSuite("Framework")]
-        [AllureSubSuite("FileAndFolders")]
-        public void TestGetSolutionDirectory()
-        {
-            var uat = FileAndFolder.GetExecutionDirectory();
-            Console.WriteLine("Solution Dir: " + uat);
-            Assert.IsTrue(Directory.Exists(uat), $"{uat} exists");
-            Assert.IsTrue(uat.Contains("NUnitAutomationFramework"),$"NUnitAutomationFramework exists in {uat}");
-        }
   
     }
 }
