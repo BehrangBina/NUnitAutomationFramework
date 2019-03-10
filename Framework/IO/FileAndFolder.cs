@@ -16,7 +16,7 @@ namespace NUnitAutomationFramework.Framework.IO
         /// <param name="destination">Destination Directory</param>
         /// <param name="destFileName">Destination FileName</param>
         /// <returns></returns>
-        public string CopyFile(string fileName, string source, string destination, string destFileName)
+        public static string CopyFile(string fileName, string source, string destFileName, string destination)
         {
             // Use Path class to manipulate file and directory paths.
             var sourceFile = Path.Combine(source, fileName);
@@ -34,7 +34,10 @@ namespace NUnitAutomationFramework.Framework.IO
             Log.Info("File copied from source to destination");
             return destFile;
         }
-
+        /// <summary>
+        /// Get The Execution path 
+        /// </summary>
+        /// <returns>Execution Path</returns>
         public static string GetExecutionDirectory()
         {
             var baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
@@ -42,6 +45,16 @@ namespace NUnitAutomationFramework.Framework.IO
            /* var solutionFullPath = Path.GetFullPath(Path.Combine(baseDirectory, "..\\..\\"));
             Log.Info("Solution Full Path: " + solutionFullPath);*/
             return baseDirectory;
+        }
+        /// <summary>
+        /// Get The project location
+        /// </summary>
+        /// <returns>Returns Project Path</returns>
+        public static string  GetProjectPath()
+        {
+            var exeDir = GetExecutionDirectory();
+            var projectPath= Path.GetFullPath(Path.Combine(exeDir, "..\\..\\"));
+            return projectPath;
         }
     }
 }

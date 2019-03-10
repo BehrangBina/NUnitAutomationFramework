@@ -36,10 +36,10 @@ namespace NUnitAutomationFramework
             var filename = "TestResult.xml";
             var allureReportFullPath = Path.Combine(allureReport, filename);
             Assert.True(File.Exists(allureReportFullPath));
-            var f = new FileAndFolder();
+            
             var configurationReader = new ConfigurationReader();
             var uat = configurationReader.ReadFolderPathFromConfigurationFile(SolutionFolders.Reports);
-            f.CopyFile(filename, allureReport, uat, filename);
+            FileAndFolder.CopyFile(filename, allureReport, filename, uat);
             Assert.IsTrue(File.Exists(Path.Combine(uat,filename)));
             // Do logout here
         }

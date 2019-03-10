@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Reflection;
 using System.Text;
 using Allure.Commons;
 using NUnit.Allure.Attributes;
@@ -28,27 +27,32 @@ namespace NUnitAutomationFramework.DevTests
             var uat = FileAndFolder.GetExecutionDirectory();
             var filename = "Test.txt";
             var path = Path.Combine(uat, filename);
-            Assert.IsFalse(File.Exists(path));
-            var newPath = Path.Combine(uat, SolutionFolders.Reports.ToString());
-            Assert.IsFalse(File.Exists(Path.Combine(newPath, filename)));
-            using (var fs = File.Create(path))
+            try
             {
-                var info = new UTF8Encoding(true).GetBytes("This is some text in the file.");
-                // Add some information to the file.
-                fs.Write(info, 0, info.Length);
+                Assert.IsFalse(File.Exists(path));
+                var newPath = Path.Combine(uat, SolutionFolders.Reports.ToString());
+                Assert.IsFalse(File.Exists(Path.Combine(newPath, filename)));
+                using (var fs = File.Create(path))
+                {
+                    var info = new UTF8Encoding(true).GetBytes("This is some text in the file.");
+                    // Add some information to the file.
+                    fs.Write(info, 0, info.Length);
+                }
+                FileAndFolder.CopyFile(filename, uat,filename,newPath);
+                Console.WriteLine("Solution Dir: " + uat);
+                Assert.IsTrue(File.Exists(Path.Combine(newPath, filename)));
+                File.Delete(path);
+                newPath = Path.Combine(newPath, filename);
+                File.SetAttributes(newPath, FileAttributes.Normal);
+
+                File.Delete(newPath);
+                Assert.IsFalse(File.Exists(path));
+                Assert.IsFalse(File.Exists(newPath));
             }
-
-            var f = new FileAndFolder();
-            f.CopyFile(filename, uat, newPath, filename);
-            Console.WriteLine("Solution Dir: " + uat);
-            Assert.IsTrue(File.Exists(Path.Combine(newPath, filename)));
-            File.Delete(path);
-            newPath = Path.Combine(newPath, filename);
-            File.SetAttributes(newPath, FileAttributes.Normal);
-
-            File.Delete(newPath);
-            Assert.IsFalse(File.Exists(path));
-            Assert.IsFalse(File.Exists(newPath));
+            finally
+            {
+               if( File.Exists(path)) File.Delete(path);
+            }
         }
 
   
