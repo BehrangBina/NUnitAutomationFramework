@@ -46,7 +46,7 @@ namespace NUnitAutomationFramework.DevTests
             var allObjects = excel.GetExcelFileObjects(destFile);
 
             var rows = allObjects.GetLength(0);
-            var columns = allObjects.GetLength(1);
+            //var columns = allObjects.GetLength(1);
             for (var  r = 1; r < rows;r++)
             {
                 var pageObject = new PageObject
@@ -56,9 +56,11 @@ namespace NUnitAutomationFramework.DevTests
                     Query = allObjects.GetValue(r, 2).ToString(),
                 };
                 Console.WriteLine(pageObject);
+                Assert.NotNull(pageObject);
+               
             }
-            
-
+            File.Delete(destFile);
+            Directory.Delete(dest);
         }
     }
 }

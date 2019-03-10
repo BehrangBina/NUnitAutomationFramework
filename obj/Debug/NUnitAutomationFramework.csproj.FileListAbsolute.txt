@@ -139,4 +139,3 @@ D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUn
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.csproj.CopyComplete
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.dll
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.pdb
-D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.csprojAssemblyReference.cache
