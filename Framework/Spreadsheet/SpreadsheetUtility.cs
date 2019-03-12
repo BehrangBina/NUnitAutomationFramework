@@ -81,8 +81,8 @@ namespace NUnitAutomationFramework.Framework.Spreadsheet
             {
                 var allObject = GetExcelFileObjects(fileName);
                 var rows = allObject.GetLength(0);
-                var col = allObject.GetLength(0);
-                Log.Info($"current rows: {rows} - current columns: {col}");
+                var cols = allObject.GetLength(0);
+                Log.Info($"current rows: {rows} - current columns: {cols}");
                 Log.Info("Trying to append to row" + rows + 1);
                 if (allObject[rows - 1, 1] != null)
                 {
@@ -101,7 +101,7 @@ namespace NUnitAutomationFramework.Framework.Spreadsheet
                 var prop = className.GetType().GetProperties().ToList();
                 var values = prop.Select(p => p.GetValue(className)).ToList();
 
-                for (var c = 0; c < col; c++)
+                for (var c = 0; c < cols; c++)
                 {
                     for (var f = 0; f < values.Count; f++)
                     {
