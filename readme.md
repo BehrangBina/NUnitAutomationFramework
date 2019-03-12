@@ -6,7 +6,7 @@ MS Build usually installed with the visual studio
 
 ## Usual Flow
 ```mermaid
-<div class="mermaid">
+[mermaid]
 graph LR
 A[Application Development] -- Built Each iteration --> B(Push To Repo like Git )
 B --> D((CI/CD i.e. Jenkins))
@@ -15,4 +15,4 @@ E  -- Build --> F[Successful Build]
 F  --> H
 T[Test Development] -- Built Each iteration --> B(Push To Repo like Git )
 T -- If Build Successful, Test Build --> H(Test Execution)
-</div>
+[/mermaid]
