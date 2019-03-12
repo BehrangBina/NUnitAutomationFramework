@@ -1543,3 +1543,105 @@
 2019-03-12 19:19:26,838 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Source File: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\Reports\TestResult.xml
 2019-03-12 19:19:26,838 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Destination File: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Reports\Reports\TestResult.xml
 2019-03-12 19:19:26,839 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - File copied from source to destination
+2019-03-12 23:01:25,373 [NonParallelWorker] INFO NUnitAutomationFramework.TestsSetupClass - ALLURE_CONFIG_ENV_VARIABLE Environment Variable Set to: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-12 23:01:25,842 [NonParallelWorker] INFO NUnitAutomationFramework.TestsSetupClass - {
+  "allure": {
+    "directory": "allure-results",
+    "links": [
+      "{link}",
+      "https://testrail.com/browse/{tms}",
+      "https://jira.com/browse/{issue}"
+    ]
+  },
+  "specflow": {
+    "stepArguments": {
+      "convertToParameters": "true",
+      "paramNameRegex": "",
+      "paramValueRegex": ""
+    },
+    "grouping": {
+      "suites": {
+        "parentSuite": "^parentSuite:?(.+)",
+        "suite": "^suite:?(.+)",
+        "subSuite": "^subSuite:?(.+)"
+      },
+      "behaviors": {
+        "epic": "^epic:?(.+)",
+        "story": "^story:(.+)"
+      }
+    },
+    "labels": {
+      "owner": "^author:?(.+)",
+      "severity": "^(normal|blocker|critical|minor|trivial)"
+    },
+    "links": {
+      "tms": "^story:(.+)",
+      "issue": "^issue:(.+)",
+      "link": "^link:(.+)"
+    }
+  }
+}
+2019-03-12 23:01:25,845 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Base Director: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-12 23:01:25,845 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.Configuration.ConfigurationReader - NUnitAutomationFramework.Framework.Configuration.ConfigurationReader Dir= D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-12 23:01:25,862 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.Configuration.ConfigurationReader - Resources folder full path selected: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Resources\Resources
+2019-03-12 23:01:26,035 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.Configuration.ConfigurationReader - Log folder full path selected: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Reports\Logs
+2019-03-12 23:01:26,055 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.Configuration.ConfigurationReader - Reports folder full path selected: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Reports\Reports
+2019-03-12 23:01:26,111 [ParallelWorker#2] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Base Director: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-12 23:01:26,111 [ParallelWorker#2] INFO NUnitAutomationFramework.Framework.Configuration.ConfigurationReader - NUnitAutomationFramework.Framework.Configuration.ConfigurationReader Dir= D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-12 23:01:26,112 [ParallelWorker#2] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Base Director: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-12 23:01:26,113 [ParallelWorker#2] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Base Director: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-12 23:01:26,115 [ParallelWorker#2] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Source File: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\DevTests\Resources\DevLocators.xlsx
+2019-03-12 23:01:26,115 [ParallelWorker#2] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Destination File: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Resources\Resources\HomePageLocator\DevLocators.xlsx
+2019-03-12 23:01:26,161 [ParallelWorker#2] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - File copied from source to destination
+2019-03-12 23:01:26,286 [ParallelWorker#2] INFO NUnitAutomationFramework.Framework.Spreadsheet.SpreadsheetUtility - Trying to load all abjedts from the file
+2019-03-12 23:01:26,630 [ParallelWorker#5] INFO NUnitAutomationFramework.Framework.ReflectionHandler.ObjectManipulator - Adding The property of CustomerName with value of BehrangBina to expando object of System.Dynamic.ExpandoObject
+2019-03-12 23:01:26,633 [ParallelWorker#2] INFO NUnitAutomationFramework.Framework.Spreadsheet.SpreadsheetUtility - Current Sheet: Locators
+2019-03-12 23:01:26,633 [ParallelWorker#5] INFO NUnitAutomationFramework.Framework.ReflectionHandler.ObjectManipulator - Adding The property of CustomerEmail with value of BehrangBina@Hotmail.com to expando object of System.Dynamic.ExpandoObject
+2019-03-12 23:01:26,639 [ParallelWorker#5] INFO NUnitAutomationFramework.Framework.ReflectionHandler.ObjectManipulator - Adding The property of CustomerAge with value of 39 to expando object of System.Dynamic.ExpandoObject
+2019-03-12 23:01:26,661 [ParallelWorker#5] INFO NUnitAutomationFramework.Framework.ReflectionHandler.ObjectManipulator - Trying to get property Name[1] from object System.Dynamic.ExpandoObject=> CustomerName
+2019-03-12 23:01:26,663 [ParallelWorker#5] INFO NUnitAutomationFramework.Framework.ReflectionHandler.ObjectManipulator - Trying to get property Value[1] from object System.Dynamic.ExpandoObject=> BehrangBina
+2019-03-12 23:01:26,686 [ParallelWorker#2] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Base Director: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-12 23:01:26,686 [ParallelWorker#2] INFO NUnitAutomationFramework.Framework.Configuration.ConfigurationReader - NUnitAutomationFramework.Framework.Configuration.ConfigurationReader Dir= D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-12 23:01:26,687 [ParallelWorker#2] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Base Director: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-12 23:01:26,688 [ParallelWorker#2] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Base Director: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-12 23:01:26,688 [ParallelWorker#2] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Source File: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\DevTests\Resources\DevLocators.xlsx
+2019-03-12 23:01:26,689 [ParallelWorker#2] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Destination File: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Resources\Resources\HomePageLocator\DevLocators.xlsx
+2019-03-12 23:01:26,692 [ParallelWorker#2] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - File copied from source to destination
+2019-03-12 23:01:26,693 [ParallelWorker#2] INFO NUnitAutomationFramework.Framework.Spreadsheet.SpreadsheetUtility - Trying to load all abjedts from the file
+2019-03-12 23:01:26,696 [ParallelWorker#2] INFO NUnitAutomationFramework.Framework.Spreadsheet.SpreadsheetUtility - Current Sheet: Locators
+2019-03-12 23:01:26,701 [ParallelWorker#2] INFO NUnitAutomationFramework.Framework.Spreadsheet.SpreadsheetUtility - Geting the data in the row 2
+2019-03-12 23:01:26,701 [ParallelWorker#2] INFO NUnitAutomationFramework.Framework.Spreadsheet.SpreadsheetUtility - Row Added to the collection: submit
+2019-03-12 23:01:26,702 [ParallelWorker#2] INFO NUnitAutomationFramework.Framework.Spreadsheet.SpreadsheetUtility - Row Added to the collection: Name
+2019-03-12 23:01:26,702 [ParallelWorker#2] INFO NUnitAutomationFramework.Framework.Spreadsheet.SpreadsheetUtility - Row Added to the collection: submit
+2019-03-12 23:01:26,702 [ParallelWorker#5] INFO NUnitAutomationFramework.Framework.ReflectionHandler.ObjectManipulator - Trying to get property Name[2] from object System.Dynamic.ExpandoObject=> CustomerEmail
+2019-03-12 23:01:26,704 [ParallelWorker#5] INFO NUnitAutomationFramework.Framework.ReflectionHandler.ObjectManipulator - Trying to get property Value[2] from object System.Dynamic.ExpandoObject=> BehrangBina@Hotmail.com
+2019-03-12 23:01:26,709 [ParallelWorker#5] INFO NUnitAutomationFramework.Framework.ReflectionHandler.ObjectManipulator - Trying to get property Name[3] from object System.Dynamic.ExpandoObject=> CustomerAge
+2019-03-12 23:01:26,711 [ParallelWorker#5] INFO NUnitAutomationFramework.Framework.ReflectionHandler.ObjectManipulator - Trying to get property Value[3] from object System.Dynamic.ExpandoObject=> 39
+2019-03-12 23:01:26,737 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Base Director: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-12 23:01:26,741 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Source File: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Test.txt
+2019-03-12 23:01:26,741 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Destination File: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Reports\Test.txt
+2019-03-12 23:01:26,744 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - File copied from source to destination
+2019-03-12 23:01:26,768 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Base Director: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-12 23:01:26,769 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Base Director: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-12 23:01:26,769 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Source File: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\DevTests\Resources\DevLocators.xlsx
+2019-03-12 23:01:26,769 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Destination File: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Resources\Resources\PageObject\DevLocators.xlsx
+2019-03-12 23:01:26,774 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - File copied from source to destination
+2019-03-12 23:01:26,774 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Base Director: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-12 23:01:26,774 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.PageElement - Execution directory is: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-12 23:01:26,775 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.PageElement - New Path: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Resources
+2019-03-12 23:01:26,775 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.PageElement - New Path: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Resources\Resources
+2019-03-12 23:01:26,775 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.PageElement - New Path: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Resources\Resources\PageObject
+2019-03-12 23:01:26,775 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Base Director: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-12 23:01:26,775 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.Configuration.ConfigurationReader - NUnitAutomationFramework.Framework.Configuration.ConfigurationReader Dir= D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-12 23:01:26,775 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.Spreadsheet.SpreadsheetUtility - Trying to load all abjedts from the file
+2019-03-12 23:01:26,779 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.Spreadsheet.SpreadsheetUtility - Current Sheet: Locators
+2019-03-12 23:01:26,782 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.PageElement - Name:firstName | By:Id | Query:Query  Added To the Collection
+2019-03-12 23:01:26,782 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.PageElement - Name:submit | By:Name | Query:Query  Added To the Collection
+2019-03-12 23:01:26,782 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.PageElement - Name:email | By:xpath | Query:Query  Added To the Collection
+2019-03-12 23:01:26,807 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Base Director: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-12 23:01:26,808 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Base Director: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-12 23:01:26,808 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.Configuration.ConfigurationReader - NUnitAutomationFramework.Framework.Configuration.ConfigurationReader Dir= D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug
+2019-03-12 23:01:26,808 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.Configuration.ConfigurationReader - Reports folder full path selected: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Reports\Reports
+2019-03-12 23:01:26,809 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Source File: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\Reports\TestResult.xml
+2019-03-12 23:01:26,809 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - Destination File: D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Reports\Reports\TestResult.xml
+2019-03-12 23:01:26,821 [NonParallelWorker] INFO NUnitAutomationFramework.Framework.IO.FileAndFolder - File copied from source to destination
