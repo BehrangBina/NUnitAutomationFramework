@@ -13,12 +13,19 @@ namespace NUnitAutomationFramework
     public class TestsSetupClass
     {
         private static readonly ILog Log = LogManager.GetLogger(typeof(TestsSetupClass));
-
+        private const string AllureConfigurationFileName = "allureConfig.json";
         [OneTimeSetUp]
         public void GlobalSetup()
         {
             XmlConfigurator.Configure();
             var dir = AppContext.BaseDirectory;
+            var allureConfigJson = Path.GetFullPath(Path.Combine(dir, "..\\..\\"));
+            var allureConfigJsonFullPath = Path.Combine(allureConfigJson, AllureConfigurationFileName);
+            if (!File.Exists(allureConfigJsonFullPath))
+            {
+                FileAndFolder.CopyFile(AllureConfigurationFileName, allureConfigJsonFullPath,
+                    AllureConfigurationFileName, dir);
+            }
             Environment.SetEnvironmentVariable(
                 AllureConstants.ALLURE_CONFIG_ENV_VARIABLE,
                 Path.Combine(dir, AllureConstants.CONFIG_FILENAME));
