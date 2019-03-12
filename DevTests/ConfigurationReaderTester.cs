@@ -28,7 +28,7 @@ namespace NUnitAutomationFramework.DevTests
         public void TestLogFolder()
         {
             var uat = _configurationReader.ReadFolderPathFromConfigurationFile(SolutionFolders.Logs);
-            Console.WriteLine($"{SolutionFolders.Logs} Log Folder is located in: {uat}");
+            Console.WriteLine(SolutionFolders.Logs+" Log Folder is located in: "+uat);
             Assert.IsTrue(Directory.Exists(uat));
         }
 
@@ -43,7 +43,7 @@ namespace NUnitAutomationFramework.DevTests
         public void TestReportsFolder()
         {
             var uat = _configurationReader.ReadFolderPathFromConfigurationFile(SolutionFolders.Reports);
-            Console.WriteLine($"{SolutionFolders.Reports} Log Folder is located in: {uat}");
+            Console.WriteLine(SolutionFolders.Reports+" Log Folder is located in: "+uat);
             Assert.IsTrue(Directory.Exists(uat));
         }
         [Test(Description = "Testing Resources Folder")]
@@ -57,7 +57,7 @@ namespace NUnitAutomationFramework.DevTests
         public void TestGetSolutionDirectory()
         {
             var uat = _configurationReader.ReadFolderPathFromConfigurationFile(SolutionFolders.Resources);
-            Console.WriteLine($"{SolutionFolders.Resources} Log Folder is located in: {uat}");
+            Console.WriteLine(SolutionFolders.Resources+" Log Folder is located in: "+uat);
             Assert.IsTrue(Directory.Exists(uat));
         }
         
