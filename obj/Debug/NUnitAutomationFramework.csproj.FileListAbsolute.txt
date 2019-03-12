@@ -139,4 +139,3 @@ D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Sys
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\System.Numerics.Vectors.xml
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.csproj.CoreCompileInputs.cache
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.csproj.CopyComplete
-D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.csprojAssemblyReference.cache

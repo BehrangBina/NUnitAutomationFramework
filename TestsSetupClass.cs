@@ -41,7 +41,6 @@ namespace NUnitAutomationFramework
             var uat = configurationReader.ReadFolderPathFromConfigurationFile(SolutionFolders.Reports);
             FileAndFolder.CopyFile(filename, allureReport, filename, uat);
             Assert.IsTrue(File.Exists(Path.Combine(uat,filename)));
-            // Do logout here
         }
     }
 }

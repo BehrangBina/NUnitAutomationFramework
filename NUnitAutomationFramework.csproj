@@ -105,11 +105,13 @@
     <Compile Include="DevTests\ConfigurationReaderTester.cs" />
     <Compile Include="DevTests\FileAndFolderTests.cs" />
     <Compile Include="DevTests\TestCanGetPageElementCollection.cs" />
+    <Compile Include="DevTests\TestReflection.cs" />
     <Compile Include="DevTests\TestSpreadsheetUtility.cs" />
     <Compile Include="Framework\Configuration\ConfigurationReader.cs" />
     <Compile Include="Framework\IO\FileAndFolder.cs" />
     <Compile Include="Framework\IO\SolutionFolders.cs" />
     <Compile Include="Framework\PageElement.cs" />
+    <Compile Include="Framework\ReflectionHandler\ObjectManipulator.cs" />
     <Compile Include="Framework\Spreadsheet\SpreadsheetUtility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestsSetupClass.cs" />
@@ -125,7 +127,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DevTests\Resources\" />
-    <Folder Include="Framework\NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
