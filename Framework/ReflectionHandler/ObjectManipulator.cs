@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Dynamic;
 using System.Linq;
+using log4net;
 
 namespace NUnitAutomationFramework.Framework.ReflectionHandler
 {
@@ -9,14 +10,20 @@ namespace NUnitAutomationFramework.Framework.ReflectionHandler
     /// </summary>
     public class ObjectManipulator
     {
+        private static readonly ILog Log = LogManager.GetLogger(typeof(ObjectManipulator));
         public static void AddProperty(ExpandoObject expando, string propertyName, object propertyValue)
         {
             // ExpandoObject supports IDictionary so we can extend it like this
             var expandoDict = expando as IDictionary<string, object>;
             if (expandoDict.ContainsKey(propertyName))
+            {
                 expandoDict[propertyName] = propertyValue;
+            }
             else
+            {
                 expandoDict.Add(propertyName, propertyValue);
+            }
+            Log.Info($"Adding The property of {propertyName} with value of {propertyValue} to expando object of {expando}");
         }
         /// <summary>
         /// get the property name of an object in order of appearance
@@ -29,6 +36,7 @@ namespace NUnitAutomationFramework.Framework.ReflectionHandler
                 .GetProperties()
                 .Select(field => field.Name)
                 .ToList();
+            Log.Info("Field properties added to a list");
             return fieldProperties;
         }
         /// <summary>
@@ -42,6 +50,7 @@ namespace NUnitAutomationFramework.Framework.ReflectionHandler
                 .GetProperties()
                 .Select(field => field.GetValue(className))
                 .ToList();
+            Log.Info("Field values added to a list");
             return fieldValues;
         }
         /// <summary>
@@ -53,6 +62,7 @@ namespace NUnitAutomationFramework.Framework.ReflectionHandler
         public static string GetExpandoObjectPropertyName(object expandoObj,int propertyNumber)
         {
             var propertyName = ((ExpandoObject) expandoObj).ElementAt(propertyNumber-1);
+            Log.Info($"Trying to get property Name[{propertyNumber}] from object {expandoObj}=> {propertyName.Key}");
             return propertyName.Key;
         }
         /// <summary>
@@ -64,6 +74,7 @@ namespace NUnitAutomationFramework.Framework.ReflectionHandler
         public static object GetExpandoObjectPropertyValue(object expandoObj,int propertyNumber)
         {
             var propertyName = ((ExpandoObject)expandoObj).ElementAt(propertyNumber-1);
+            Log.Info($"Trying to get property Value[{propertyNumber}] from object {expandoObj}=> {propertyName.Value}");
             return propertyName.Value;
         }
     }

@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Reflection;
 using Allure.Commons;
+using log4net;
 using NUnit.Allure.Attributes;
 using NUnit.Allure.Core;
 using NUnit.Framework;
