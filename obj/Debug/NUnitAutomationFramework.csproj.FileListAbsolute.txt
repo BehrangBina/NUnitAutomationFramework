@@ -22,5 +22,4 @@ D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\Web
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\bin\Debug\WebDriver.Support.xml
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.dll
 D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.pdb
-D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.csproj.CoreCompileInputs.cache
-D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.csproj.CopyComplete
+D:\Work\Projects\NUnitAutomationFramework\NUnitAutomationFramework\obj\Debug\NUnitAutomationFramework.csprojResolveAssemblyReference.cache

@@ -21,7 +21,7 @@ namespace NUnitAutomationFramework
             var dir = AppContext.BaseDirectory;
             var allureConfigJson = Path.GetFullPath(Path.Combine(dir, "..\\..\\"));
             var allureConfigJsonFullPath = Path.Combine(allureConfigJson, AllureConfigurationFileName);
-            if (!File.Exists(allureConfigJsonFullPath))
+            if (!File.Exists(Path.Combine(dir, AllureConfigurationFileName)))
             {
                 FileAndFolder.CopyFile(AllureConfigurationFileName, allureConfigJsonFullPath,
                     AllureConfigurationFileName, dir);
