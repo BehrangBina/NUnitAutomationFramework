@@ -13,7 +13,6 @@ namespace NUnitAutomationFramework.Framework.Spreadsheet
     {
         private static readonly ILog Log = LogManager.GetLogger(typeof(SpreadsheetUtility));
         private readonly ConfigurationReader _configHandler;
-        private string _excelFileName;
         public SpreadsheetUtility()
         {
             _configHandler = new ConfigurationReader();
@@ -47,18 +46,20 @@ namespace NUnitAutomationFramework.Framework.Spreadsheet
                 {
                     Log.Error("Could not find any worksheet in the excelfile: "+ filePath);
                 }
-                _excelFileName = filePath;
+                
                 return allObjects;
             }
         }
+
         /// <summary>
         /// Get objects in a row by row id
         /// </summary>
+        /// <param name="filePath">Full Excel File Path</param>
         /// <param name="rowId">Row number /ID</param>
         /// <returns></returns>
-        public List<string> GetRow( int rowId)
+        public List<string> GetRow(string filePath, int rowId)
         {
-            var allObjects = GetExcelFileObjects(_excelFileName);
+            var allObjects = GetExcelFileObjects(filePath);
             Log.Info("Geting the data in the row " + rowId);
             var row = new List<string>();
             for (var i = 0; i < allObjects.GetLength(1); i++)
